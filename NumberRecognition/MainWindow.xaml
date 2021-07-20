@@ -1,0 +1,21 @@
+﻿<Window x:Class="NumberRecognition.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NumberRecognition"
+        mc:Ignorable="d"
+        Title="Number Recognition" Height="350" Width="400">
+    <Grid>
+        <Canvas Name="Paint" MouseDown="Paint_MouseDown" MouseMove="Paint_MouseMove" Width="200" Height="200" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Canvas.Background>
+                <SolidColorBrush Color="Black" Opacity="1"></SolidColorBrush>
+            </Canvas.Background>
+        </Canvas>
+        <Button Click="Button_Click_1" Margin="43,222,243,55">Auswerten</Button>
+        <Button Click="Button_Click_2" Margin="231,222,56,55">Clear</Button>
+
+        <TextBlock FontSize="32" Margin="216,10,0,259">Prediction:</TextBlock>
+        <TextBlock x:Name="Result" FontSize="128" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="253,47,0,0"></TextBlock>
+    </Grid>
+</Window>
