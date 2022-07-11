@@ -4,7 +4,7 @@ from tensorflow import keras
 
 #import matplotlib.pyplot as plt
 
-model = keras.models.load_model("model.h5")
+model = keras.models.load_model("..\..\..\model.h5")
 
 img = Image.open("img.jpg")
 img = img.resize((28, 28), resample=Image.BICUBIC)
